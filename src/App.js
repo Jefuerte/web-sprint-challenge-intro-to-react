@@ -3,6 +3,7 @@ import './App.css';
 import axios from "axios";
 import Character from "./components/Character";
 
+
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
@@ -18,10 +19,12 @@ useEffect(() => {
   })
   .catch(err => console.error(err));
 }, [])
+
+
   
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
+      <h1 className="Header">Star Wars Characters</h1>
       < Character stars ={stars} />
     </div>
   );
